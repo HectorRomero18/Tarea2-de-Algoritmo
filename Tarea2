@@ -1,0 +1,1042 @@
+Funcion ejercicio1
+		//Ejercicio N°1 "Leer caracteres"
+		//Definimos caracter como una variable de caracter
+		//Pedimos al usuario que ingrese un caracter
+		//Leemos el caracter
+		//Usamos el Si-Entonces
+		//Mostramos los resultados
+		Definir caracter Como Caracter
+		Escribir "Ingrese un caracter"
+		leer caracter
+		Si caracter = ' a ' Entonces
+			Escribir "El caracter es una letra"
+		Fin Si
+		Si caracter = ' A ' Entonces
+			Escribir "El caracter es una letra mayuscula"
+		Fin Si
+		Si caracter = ' z ' Entonces
+			Escribir "El caracter es una letra"
+		FinSi
+		si caracter = ' Z ' Entonces
+			Escribir "El caracter es una letra mayuscula"
+		FinSi
+		//Verificar si es un signo de puntuacion
+		Si caracter = ' , '  Entonces
+			Escribir "El caracter es un signo de puntuacion"
+		Fin Si
+		si caracter = ' . ' Entonces
+			Escribir "El caracter es un signo de puntuacion"
+		FinSi
+		si caracter= ' ; ' Entonces
+			Escribir "El caracter es un signo de puntuacion"
+		FinSi
+FinFuncion
+
+Funcion ejercicio2
+	//Ejercicio N°2 
+	//Definimos car como caracter
+	//Pedimos al usuario que ingrese un caracter
+	//Leer car
+	//Usamos el Si-Entonces
+	//Mostramos los resultados
+	Definir car Como Caracter
+	Escribir "Ingrese un caracter"
+	leer car
+	Dimension vocal[5]
+	vocal[1] = 'a'
+	vocal[2] = 'e'
+	vocal[3] = 'i'
+	vocal[4] = 'o'
+	vocal[5] = 'u'
+	Dimension num[9]
+	Si car = vocal[] Entonces
+		Escribir "El caracter es una vocal"
+	Fin Si
+	si car = num[9] Entonces
+		Escribir "El caracter es un numero"
+	FinSi
+FinFuncion
+
+Funcion ejercicio3
+	//Ejercicio N°3
+	//Definimos vocal como Caracter
+	//Pedimos al usuario que ingrese una vocal
+	//Leer vocal
+	//Usamos el "Segun"
+	//Dependeiendo de la vocal ingresada esta tendra un valor
+	//Mostramos los resultados
+	Definir vocal Como Caracter
+	Escribir "Ingrese una vocal"
+	leer vocal 
+	Segun vocal Hacer
+		'a':
+			Escribir "El valor de esta vocal es:"
+		'e':
+			Escribir "El valor de esta vocal es:"
+		'i':
+			Escribir "El valor de esta vocal es:"
+		'o':
+		    Escribir "El valor de esta vocal es:"
+		'u':
+			Escribir "El valor de esta vocal es:"
+		De Otro Modo:
+			Escribir "Los datos ingresados son incorrectos"
+	Fin Segun
+FinFuncion
+
+Funcion ejercicio4
+	//Ejercicio N°4
+	//Definimosnom1, nom2 como caracter 
+	//Pedimos al usuario que ingrese un nombre
+	//Leer nom1
+	//Pedimos al usuario que ingrese otro nombre
+	//Leer nom2
+	//Usamos el Si-Entonces
+	//Mostramos los resultados
+	Definir nom1, nom2 Como Caracter
+	Definir x, z Como entero
+	Escribir "Ingrese un nombre"
+	leer nom1
+	Escribir "Ingrese otro nombre"
+	leer nom2
+	x = Longitud(nom1)
+	z = Longitud(nom2)
+	Si x = z  Entonces
+		Escribir "Los nombres son iguales"
+	SiNo
+		Escribir "Los nombres no son iguales"
+	Fin Si
+	
+FinFuncion
+
+Funcion ejercicio5
+	//Ejercicio N°5
+	//Definimos num1, num2 como entero
+	//Pedimos al usuario que ingrese un numero
+	//Leer num1
+	//Pedimos al usuario que ingrese otro numero
+	//Leer num2
+	//Usamos el Si-Entonces
+	//Mostramos los resultados
+	Definir num1, num2 Como Entero
+	Escribir "Ingrese un numero"
+	leer num1
+	Escribir "Ingrese otro numero"
+	leer num2
+	Si num1 = num2 Entonces
+		Escribir "Los numeros son iguales"
+	Fin Si
+	si (num1 > num2) Entonces
+		Escribir "El primer numero es mayor"
+	FinSi
+	si (num2 > num1) Entonces
+		Escribir "El  segundo numero es mayor"
+	FinSi
+	
+FinFuncion
+
+Funcion ejercicio6
+	//Ejercicio N°6
+	//Definimos num1, num2, num3 como enteros
+	//Pedimos al usuario que ingrese un numero
+	//Leer num1 
+	//Pedimos al usuario que ingrese el segundo numero
+	//Leer num2
+	//Pedimos al usuario que ingrese el tercer numero
+	//Leer num3 
+	//Usamos el Si-Entonces
+	//Mostramos los resultados
+	Definir num1, num2, num3 Como Entero
+	Escribir "Ingrese un numero"
+	leer num1
+	Escribir "Ingrese el segundo numero"
+	leer num2
+	Escribir "Ingrese el tercer numero"
+	leer num3
+	Si (num1 =  num2 ) y (num1 = num3) y ( num2 = num3) Entonces
+		Escribir "Los numeros son iguales"
+	Fin Si
+	si (num1 > num2) y (num1 > num3) Entonces
+		Escribir "El numero mayor es:" , num1
+	FinSi
+	si (num2 > num1) y (num2 > num3) Entonces
+		Escribir "El numero mayor es:" , num2
+	FinSi
+	si (num3 > num1) y (num3 > num2) Entonces
+		Escribir "El numero mayor es:" , num3
+	FinSi
+FinFuncion
+
+Funcion ejercicio7
+	//Ejercicio N°7
+	//Definimos num como entero
+	//Usamos el Si-Entonces
+	//Pedimos al usuario que ingrese un numero
+	//Lee num
+	//Mostramos los resultados
+	Definir num como entero
+	Escribir "Ingrese un numero"
+	leer num
+	Si num = 0 Entonces
+		Escribir "El numero es neutro"
+	Fin Si
+	si num >= 1 Entonces
+		Escribir "El numero es positivo"
+	FinSi
+	si num < 1 Entonces
+		Escribir "El numero es negativo"
+	FinSi
+FinFuncion
+
+Funcion ejercicio8
+	//Ejercicio N°8
+	//Definimos x como entero
+	//Pedimos al usuario la cantidad de lapices que va a comprar
+	//Leer x
+	//Usamos el Si-Entonces
+	//Mostramos los resultados
+	Definir x como entero
+	Escribir "Ingrese la cantidad de lapices que va a comprar"
+	leer x
+	Si x > 1000 Entonces
+		Escribir "El precio es de: 1.00$ "
+	Fin Si
+	si x < 1000 Entonces
+		Escribir "El precio es de: 1.50$ "
+	FinSi
+FinFuncion
+
+Funcion ejercicio9
+	//Ejercicio N°9
+	//Definimos precio, total, calculo como entero
+	//Pedimos al usuario que ingrese precio del traje que va a comprar
+	//Leer precio
+	//Usamos el Si-Entonces
+	//Mostramos los resultados
+	Definir precio, total, calculo Como Entero
+	Escribir "Ingrese el precio del traje que va a comprar"
+	leer precio
+	Si precio >= 2500 Entonces
+		calculo = precio * 15 / 100
+		total = precio - calculo
+	Fin Si
+	si precio < 2500 Entonces
+		calculo = precio * 8 / 100
+		total = precio - calculo
+	FinSi
+	Escribir "El preciofinal es de:" , total 
+FinFuncion
+
+Funcion ejercicio10
+	//Ejercicio N°10
+	//Definimos platillo, personas total como entero
+	//Pedimos al usuario que ingrese la cantidad de personas
+	//Leer personas
+	//DEpendiendo de la cantidad de personas, el costo del platillo cambiara
+	//Usamos el Si-Entonces
+	//Mostramos los resultados
+	Definir platillo, personas, total como entero
+	Escribir "Ingrese la catidad de personas"
+	leer personas
+	Si personas < 200 Entonces
+		total = personas * 95
+	Fin Si
+	si (personas > 200) y (personas <= 300) Entonces
+		total = personas * 85
+	FinSi
+	si personas > 300 Entonces
+		total = personas * 75
+	FinSi
+	Escribir "El precio final es de:" , total 
+FinFuncion
+
+Funcion ejercicio11
+	//Ejercicio N°11
+	//Definimos tipo como entero
+	//Definimos tamaño como entero
+	//Pedimos al usuario que ingrese el tipo
+	//Leer tipo
+	//Pedimos al usuario que ingrese el tamaño
+	//Leer tamaño
+	//Usuamos el Si-Entonces
+	//Mostramos los resultados
+	Definir tipo Como Caracter
+	Definir tamaño Como Entero
+	Escribir "Ingrese el tipo: A o B"
+	leer tipo
+	Escribir "Ingrese el tamaño: 1 o 2"
+	leer tamaño
+	Si (tipo = 'A') y (tamaño = 1) Entonces
+		Escribir "Se cargan 20$ al precio inicial"
+	Fin Si
+	si (tipo = 'A') y (tamaño = 2) Entonces
+		Escribir "Se cargan 30$ al precio inicial"
+	FinSi
+	si (tipo = 'B') y (tamaño = 1) Entonces
+		Escribir "Se rebajan 30$ al precio inicial"
+	FinSi
+	si (tipo = 'B') y (tamaño = 2) Entonces
+		Escribir "Se rebajan 50$ al precio inicial"
+	FinSi
+FinFuncion
+
+Funcion ejercicio12
+	//Ejercicio N°12
+	//Definir cantidad, total como entero
+	//Pedimos que ingrese la cantidad de alumnos que iran de viaje
+	//Leer cantidad
+	//Usamos Si-Entonces
+	//Mostramos los resultados
+	Definir cantidad, total Como Entero
+	Escribir "Ingrese la cantidad de alumnos que iran de viaje"
+	leer cantidad
+	Si cantidad >= 100 Entonces
+		Escribir "El precio a pagar por cada alumno es de: 65.00$ "
+		total = cantidad * 65
+	Fin Si
+	si (cantidad >= 50) y (cantidad <= 99) Entonces
+		Escribir "El precio a pagar por cada alumno es de: 70.00$ "
+		total = cantidad * 70
+	FinSi
+	si (cantidad >= 30) y (cantidad <= 49) Entonces
+		Escribir "El precio a pagar por cada alumno es de: 95.00$ "
+		total = cantidad * 95
+	FinSi
+	si cantidad < 30 Entonces
+		Escribir "El costo de la renta del autobus es de: 4000.00$ "
+	FinSi
+	Escribir "El precio final es de:" , total 
+FinFuncion
+
+Funcion ejercicio13
+	//Ejercicio N°13
+	//Definimos cantidad como entero
+	//Definimos tipo como Caracter
+	//Pedimos al usuario que ingrese el tipo de autobus que eligio
+	//Leer tipo
+	//Usamos el Segun 
+	//Mostramos los resultados
+	Definir cantidad Como Entero
+	Definir tipo Como Caracter
+	Definir total Como Real
+	Escribir "Ingrese el tipo de bus que eligio"
+	leer tipo
+	Escribir "Ingrese la cantidad de personas que iran en el bus"
+	leer cantidad
+	Segun tipo Hacer
+		'A':
+			si cantidad >= 20 Entonces
+				
+			FinSi
+			total = cantidad * 2.0
+		'B':
+			si cantidad >= 20 Entonces
+				
+			FinSi
+			total = cantidad * 2.5
+		'C':
+			si cantidad >= 20 Entonces
+				
+			FinSi
+			total = cantidad * 3.0
+		De Otro Modo:
+			Escribir "Datos incorrectos"
+	Fin Segun
+	Si cantidad < 20 Entonces
+		total = total * 20
+	SiNo
+	Fin Si
+	Escribir "El precio total es de:" , total
+FinFuncion
+
+Funcion ejercicio14
+	//Ejercicio N°14
+	//Definimos cantidad como entero
+	//Definimos total como real
+	//Definimos costo como real
+	//Pedimos al usuario que ingrese la cantidadde colas compradas
+	//Leer cantidad
+	//Usamos el Si-Entonces
+	//Mostramos los resultados
+	Definir cantidad como entero
+	Definir total Como Real
+	Escribir "Ingrese la cantidad de colas compradas"
+	leer cantidad
+	Si cantidad > 23 Entonces
+		costo = 0.50
+		total = cantidad * costo
+	SiNo
+		costo = 0.60
+		total = cantidad * costo
+	Fin Si
+	calculo = total * 12 / 100
+	total2 = total + calculo
+	Escribir "La cantidad comprada es de:" , cantidad
+	Escribir "El costo por unidad es de:" , costo
+	Escribir "El total sin IVA es de:" , total 
+	Escribir "El total con IVA es de:" , total2
+FinFuncion
+
+Funcion ejercicio15
+	//Ejercicio N°15
+	//Definimos cantidad, precio como entero
+	//Definimos total como real
+	//Definimos costo como real
+	//Pedimos al usuario que ingrese la cantidadde colas compradas
+	//Leer cantidad
+	//Usamos el Si-Entonces
+	//Mostramos los resultados
+	Definir cantidad, precio como entero
+	Definir total, total2 Como Real
+	Escribir "Ingrese el precio"
+	leer precio
+	Escribir "Ingrese la cantidad de colas compradas"
+	leer cantidad
+	Si cantidad > 19 Entonces
+		calculo = cantidad * 10 / 100
+		total = precio - calculo
+	Fin Si
+	si cantidad < 20 Entonces
+		calculo = cantidad * 20 / 100
+		total = precio - calculo
+	FinSi
+	calculo2 = total * 5 / 100
+	total2 = total - calculo2
+	Escribir "La cantidad comprada es de:" , cantidad
+	Escribir "El precio original es de:" , precio
+	Escribir "El descuento inicial es de:" , calculo "%"
+	Escribir "El precio final es de:" , total2
+FinFuncion
+
+Funcion ejercicio16
+	//Ejercicio N°16 
+	//Definimos citas, total, precio como entero
+	//Pedimos al usuario que ingrese la cantidad de citas
+	//Leer citas
+	//Dependiendo de citas el valor puede variar
+	//Usamos Si-Entonces
+	//Mostramos los resultados
+	Definir citas, total, precio Como Entero
+	Escribir "Ingrese la cantidad de citas"
+	leer citas
+	Si citas  <= 3 Entonces
+		precio = 200
+		total = citas * precio
+	Fin Si
+	si (citas <= 5) y (citas > 3) Entonces
+		precio = 150
+		total = citas * precio
+	FinSi
+	si (citas > 5) y (citas <= 8) Entonces
+		precio = 100
+		total = citas * precio
+	FinSi
+	si citas > 8 Entonces
+		precio = 50
+		total = citas * precio
+	FinSi
+	Escribir "El precio po cada cita es de:" , precio
+	Escribir "El costo total es de:" , total "$"
+FinFuncion
+
+Funcion ejercicio17
+	//Ejercicio N°17
+	//Definimos claves 
+	//Pedimos al usuario que ingrese el numero de clave
+	//Leer clave
+	//Calcular el costo de produccion y precio de venta
+	Definir claves Como Entero
+	Definir prima Como Real
+	Escribir "Ingrese el costo de la materia prima"
+	leer prima
+	Escribir "Ingrese el numero de clave"
+	leer claves
+	Si (claves = 3) o (claves = 4) Entonces
+		x = prima + 75 / 100
+		z = prima + x
+	Fin Si
+	si (claves = 1) o (claves = 5) Entonces
+		x = prima * 80 / 100
+		z = prima + x
+	FinSi
+	si (claves = 2) o (claves = 6) Entonces
+		x = prima * 85 / 100
+		z = prima + x
+	FinSi
+	Escribir "El costo de la mano de obra es de:" , z "$"
+	si (claves = 2) o (claves = 5) Entonces
+		b = prima * 30 / 100
+		u = prima + b
+	FinSi
+	si (claves = 3) o (claves = 6) Entonces
+		b = prima * 35 / 100
+		u = prima + b
+	FinSi
+	si (claves = 4) o (claves = 1) Entonces
+		b = prima * 28 / 100
+		u = prima + b
+	FinSi
+	Escribir "El gasto de fabricacion es de:" , u "$"
+FinFuncion
+
+Funcion ejercicio18
+	//Ejercicio N°17
+	//Definimos tipo, credito como entero
+	//Pedimos al usuario que ingrese su credito
+	//Leer credito
+	//Pedimos al usuario que ingrese el tipo
+	//Leer tipo
+	//Usamos el Si-Entonces 
+	//Mostramos los resultados
+	Definir tipo, credito Como Entero
+	Definir calculo, aumento Como Real
+	Escribir "Ingrese su credito"
+	leer credito
+	Escribir "ingrese el tipo de su tarjeta"
+	leer tipo
+	Si tipo = 1 Entonces
+		calculo = credito * 25 / 100
+		aumento = credito + calculo
+	Fin Si
+	si tipo = 2 Entonces
+		calculo = credito * 35 / 100
+		aumento = credito + calculo
+	FinSi
+	si tipo = 3 Entonces
+		calculo = credito * 40 / 100
+		aumento = credito + calculo
+	FinSi
+	si tipo > 3 Entonces
+		calculo = credito * 50 / 100
+		aumento = credito + calculo
+	FinSi
+	Escribir "El nuevo limite de su credito es de:" , aumento 
+FinFuncion
+
+Funcion ejercicio19
+	//Ejercicio N°19
+	//Definimos zona, peso como entero
+	//Definimos total como real
+	//Pedimos al usuario que ingrese la zona 
+	//Leer zona
+	//Pedimos al usuario que ingrese el peso
+	//Leer peso
+	//Usamos el Segun y el Si-Entonces
+	//Mostramos los resultados
+	Definir zona, peso Como Entero
+	Escribir "Ingrese la zona"
+	Escribir "1: America del Norte"
+	Escribir "2: America central"
+	Escribir "3: America del Sur"
+	Escribir "4: Europa"
+	Escribir "5: Asia"
+	leer zona
+	Escribir "Ingrese el perso"
+	leer peso
+	Segun zona Hacer
+		1:
+			Si peso > 5 Entonces
+				total = 11.00 
+				Escribir "El precio final es de:" , total "$"
+			Fin Si
+		2:
+			si peso > 5 Entonces
+				total = 10.00
+				Escribir "El precio final es de:" , total "$"
+			FinSi
+		3:
+			si peso > 5 Entonces
+				total = 12.00
+				Escribir "El precio final es de:" , total "$"
+			FinSi
+		4:
+			si peso > 5 Entonces
+				total = 24.00
+				Escribir "El precio final es de:" , total "$"
+			FinSi
+		5:
+			si peso > 5 Entonces
+				total = 27.00
+				Escribir "El precio final es de:" , total "$"
+			FinSi
+		De Otro Modo:
+			Escribir "No hacemos entregas con un peso menor a 5kg"
+	Fin Segun
+FinFuncion
+
+Funcion ejercicio20
+	//Ejecicio N°20
+	//Definimos cant, x como entero
+	//Pedimos al usuario que ingrese la cantidad de alumnos encuestados
+	//Leer cant
+	//Dimension vector[x]
+	//Usamos el Mientras 
+	//Usamos el Si- Entonces
+	//Mostramos los resultados
+	Definir cant, x Como Entero
+	Escribir "Ingrese la cantidad de alumnos encuestados"
+	leer cant 
+	Dimension vector[x]
+	Mientras cant > 1 Hacer
+		Escribir "Ingrese el peso de cada alumno"
+		leer vector[x]
+		cant = cant - 1
+	Fin Mientras
+	si vector[x] < 40 Entonces
+		Escribir "La cantidad de alumnos con un peso menor a 40kg es de:", vector[x]
+	FinSi
+	si (vector[x] > 40) y (vector[x] <= 50) Entonces
+		Escribir "La cantidad de alumnos con un peso entre 40kg y 50kg es de:" , vector[x]
+	FinSi
+	si (vector[x] > 50) y (vector[x] <= 60) Entonces
+		Escribir "La cantidad de alumnos con un peso entre 50kg y 60kg es de:" , vector[x]
+	FinSi
+	si (vector[x] > 60) Entonces
+		Escribir "La cantidad de alumnos con un peso mayor a 60kg es de:" , vector[x]
+	FinSi
+	prom = vector[x] / cant 
+	Escribir "El promedio de peso de los alumnos es de:" , prom
+	
+FinFuncion
+
+Funcion ejercicio21
+	//Ejercicio N°21
+	//Definimos num, num2, num3, num4 como entero
+	//Pedimos al usuario que ingrese un numero
+	//Leer num
+	//Pedimos al usuario que ingrese el segundo numero
+	//Leer num2
+	//Pedimos al usuario que ingrese el tercer numero
+	//Leer num3
+	//Pedimos al usuario que ingrese el ultimo numero
+	//Leer num4
+	//Usamos el Si-Entonces
+	//Mostramos los resultados
+	Definir num, num2, num3, num4 Como Entero
+	Escribir "Ingrese un numero"
+	leer num
+	Escribir "Ingrese el segundo numero"
+	leer num2
+	Escribir "Ingrese el tercer numero"
+	leer num3
+	Escribir "Ingrese el cuarto numero"
+	leer num4
+	Si num1 - num2 = num1 Entonces
+		Escribir "El primer numero es la mitad del segundo"
+	Fin Si
+	si num3 mod num4 = 0 Entonces
+		Escribir "El tercer numero es divisor del cuarto numero"
+	FinSi
+FinFuncion
+
+Funcion ejercicio22
+	//Ejercicio N°22
+	//Definimos num1, num2, num3 como entero
+	//Pedimos al usuari que ingrese el primer numero
+	//Leer num1
+	//Pedimos al usuario que ingrese el segundo numero
+	//Leer num2
+	//Pedimos al usuario que ingrese el tercer numero
+	//Leer num3
+	//Usamos el Si-Entonces
+	//Mostramos los resultados
+	Definir num1, num2, num3 Como Entero
+	Escribir "Ingrese el primer numero"
+	leer num1
+	Escribir "Ingrese el segundo numero"
+	leer num2
+	Escribir "Ingrese le tercer numero"
+	leer num3
+	Si num1 - num2 = num2 Entonces
+		Escribir "El primer numero es el doble del segundo"
+	FinSi
+	x = num3 * 20 / 100
+	z = num3 - x
+	 si num1 = z Entonces
+		 Escribir "El primer numero es 20% menos que el tercer numero"
+	 FinSi
+FinFuncion
+
+Funcion ejercicio23
+	//Ejercicio N°23
+	//Definimos dia, dias como Caracter
+	//Definimos num, pos como entero
+	//Dimension [dia]
+	//Pedimos al usuario que ingres el numero del dia
+	//Leer num 
+	//Usamos el Si-Entonces
+	//Mostramos los resultados
+	Definir dia, dias Como Caracter
+	Definir num, pos como entero
+	Dimension dia[7]
+	dia[1] = "Lunes"
+	dia[2] = "Martes"
+	dia[3] = "Miercoles"
+	dia[4] = "Jueves"
+	dia[5] = "Viernes"
+	dia[6] = "Sabado"
+	dia[7] = "Domingo"
+	Escribir "Ingrese el numero del dia"
+	leer num 
+	Si (num1 >= 1) y (num <= 7) Entonces
+		dias = dia[num]
+		Escribir "Este numero corresponde al dia:", dias 
+	SiNo
+		Escribir "ERROR"
+	Fin Si
+	
+FinFuncion
+
+Funcion ejercicio24
+	//Ejercicio N°24
+	//Definimos mes, meses como Caracter
+	//Definimos numcomo entero
+	//Dimension [mes]
+	//Pedimos al usuario que ingres el numero del mes
+	//Leer num 
+	//Usamos el Si-Entonces
+	//Mostramos los resultados
+	Definir mes, meses Como Caracter
+	Definir num como entero
+	Dimension mes[12]
+	mes[1] = "Enero"
+	mes[2] = "Febrero"
+	mes[3] = "Marzo"
+	mes[4] = "Abril"
+	mes[5] = "Mayo"
+	mes[6] = "Junio"
+	mes[7] = "Julio"
+	mes[8] = "Agosto"
+	mes[9] = "Septiembre"
+	mes[10] = "Octubre"
+	mes[11] = "Noviembre"
+	mes[12] = "Diciembre"
+	Escribir "Ingrese el numero del mes"
+	leer num 
+	Si (num >= 1) y (num <= 12) Entonces
+		meses = mes[num]
+		Escribir "Este numero corresponde al mes:", meses 
+	SiNo
+		Escribir "ERROR"
+	Fin Si
+FinFuncion
+
+Funcion ejercicio25
+	//Ejercicio N°25
+	//Definimos estatura cant como entero
+	//Definimos prom como real
+	//Dimension cant[x] 
+	//Pedimos al usuario que ingrese la cantidad de personas encuestadas
+	//Leer cant[x]
+	//Usamos el Mientras 
+	//Calcylamos el promedio
+	//Mostramos los resultados
+	Definir estatura, cant Como Entero
+	Definir prom Como Real
+	Dimension cant[x]
+	Escribir "Ingrese la cantidad de personas encuestadas"
+	leer cant[x] 
+	Mientras cant[x] > 1 Hacer
+		Escribir "Ingrese la estatura de la persona"
+		leer estatura
+		cant[x] = cant[x] - 1
+	Fin Mientras
+	prom = estatura / cant[x]
+	Escribir "El promedio de las estaturas es de:" , prom
+FinFuncion
+
+Funcion ejercicio26
+	//Ejercicio N°26
+	//Definimos x como entero
+	//x = 0
+	//Usamos el Mientras 
+	//Usamos el Si-Entonces
+	//Usamos el mod
+	//Mostramos los resultados
+	Definir x Como Entero
+	x = 0
+	Mientras x <= 100 Hacer
+		si x mod 2 = 0 Entonces
+			Escribir x
+		FinSi
+		x = x + 1
+	Fin Mientras
+FinFuncion
+
+Funcion ejercicio27
+	//Ejercicio N°27
+	//Definimos x, z , total como entero
+	//x = 0
+	//Usamos el Mientras 
+	//Mostramos los resultados
+	Definir x, z, total Como Entero
+	x = 0
+	Mientras x <= 10 Hacer
+		Escribir "Ingrese un numero"
+		leer z
+		x = x + 1
+	Fin Mientras
+	total = z + z
+	Escribir "La suma de los numeros ingresados es de:" , total 
+FinFuncion
+
+Funcion ejercicio28
+	//Ejercicio N°28
+	//Definimos cantidad, edad como entero
+	//Definimos prom como real
+	//Pedimos al usuari que in grese la cantidad de alumnos encuestados
+	//Leer cantidad
+	//Usamos el Mientras 
+	//Calculamos el promedio
+	//Mostramos los resultados
+	Definir cantidad, edad  Como Entero
+	Definir prom Como Real
+	Escribir "Ingrese la cantidad de alumnos encuestados"
+	leer cantidad 
+	Mientras cantidad > 1 Hacer
+		Escribir "Ingrese la edad de los alumnos"
+		leer edad 
+		cantidad = cantidad - 1
+	Fin Mientras
+	prom = edad / cantidad 
+	Escribir "El promedio de las edades de los alumnos es de:" , prom 
+FinFuncion
+
+Funcion ejercicio29
+	//Ejercicio N°29
+	//Definimos registroh, valorh, totalh, sueldoh como entero
+	//Pedimos al usuario que ingrese la cantidad de horas que trabaja
+	//Leer registroh
+	//Pedimos al usuario que ingrese el valor a pagar por cada hora de trabajo
+	//Leer valorh
+	//totalh = registroh * 20
+	//sueldoh = valorh * totalh 
+	//Mostramos los resultados
+	Definir registroh, valorh, totalh, sueldoh Como Entero
+	Escribir "Ingrese la cantidad de horas que trabajo en los ultimos 20 dias"
+	leer registroh
+	Escribir "Ingrese el valor a pagar por cada hora de trabajo"
+	leer valorh
+	totalh = registroh * 20
+	Escribir "El total de las horas trabajadas es de:" , totalh 
+	sueldoh = valorh * totalh 
+	Escribir "Su sueldo por horas trabajadas es de:" , sueldoh "$"
+FinFuncion
+
+Funcion ejercicio30
+	//Ejercicio N°30
+	//Definimos n, i, c, x como entero
+	//Dimension vector[n]
+	Definir n, i, c, x Como Entero
+	Escribir "Ingrese la cantidad de ventas al dia"
+	leer n
+	Dimension vector[n] 
+	Mientras vector[n] > 1 Hacer
+		Escribir "Ingrese el valor de los productos que vendio"
+		leer x
+		vector[n] = vector[n] - 1
+	Fin Mientras
+	Escribir "Ingrese el valor que quieres buscar"
+	Escribir "1: Mayores 1000$"
+	Escribir "2: Mayores a 500$ o iguales a 1000$"
+	Escribir "3: Menores a 500$"
+	leer x
+	c = 0
+	Para i = 0 Hasta n - 1 Con Paso 1 Hacer
+		si x = vector[i] Entonces
+			c = c + 1
+		FinSi
+	Fin Para
+	Escribir "Los productos con un valor de" , x , "se vendieron un total de:", c " unidades" 
+FinFuncion
+
+Funcion ejercicio31
+	//Ejercicio N°31
+	//Definimos x,c,a,b como entero
+	//Definimos prom como real
+	//Pedimos al usuario que ingrese la cantidad de alumnos a promediar
+	//Leer x
+	//Usamos el Mientras 
+	//Calculamos promedios
+	//Mostramos los resultados
+	Definir x,c,a,b Como Entero
+	Definir prom Como Real
+	Escribir "Ingrese la cantidad de alumnos a promediar"
+	leer x
+	Mientras x > 1 Hacer
+		Escribir "Ingrese la calificacion de la asignatura de logica"
+		leer c
+		x = x -1
+	Fin Mientras
+	Mientras x > 1 Hacer
+		Escribir "Ingrese la calificacion de la asignatura de requerimientos"
+		leer a
+		x = x - 1
+	Fin Mientras
+	Mientras x > 1 Hacer
+		Escribir "Ingrese la calificacion de la asignatura de calculo"
+		leer b
+		x = x - 1
+	Fin Mientras
+	prom = c + a + b / x
+	Escribir "El promedio de los alumnos en todas las materias es de:", prom
+FinFuncion
+
+Funcion ejercicio32
+	//Ejercicio N°32
+	//Definimos categoria como Caracter 
+	//Definimos prom, sueldo, total, calculo como real
+	//Pedimos qe ingrese su sueldo
+	//Leer sueldo
+	//Pedimos que ingrese su categoria
+	//Leer categoria
+	//Usamos el Segun 
+	//Mostramos los resultados
+	Definir categoria Como Caracter
+	Definir prom, sueldo, calculo, total Como Real
+	Escribir "Ingrese su sueldo"
+	leer sueldo
+	Escribir "Ingrese la categoria"
+	leer categoria
+	Segun categoria Hacer
+		'Auxiliar':
+			Escribir "Tienes un incremento del 10%"
+			calculo = sueldo * 10 / 100
+			total = sueldo + calculo
+			Escribir "Su nuevo sueldo es de:" , total "$"
+			
+		'Agregado':
+			Escribir "Tienes un incremento del 20%"
+			calculo = sueldo * 20 / 100
+			total = sueldo + calculo
+			Escribir "Su nuevo sueldo es de:" , total "$"
+		'Principal':
+			Escribir "Tienes un incremento del 30%"
+			calculo = sueldo * 30 / 100
+			total = sueldo + calculo
+			Escribir "Su nuevo sueldo es de:" , total "$"
+		De Otro Modo:
+			Escribir "Categoria inexistente"
+	Fin Segun
+FinFuncion
+
+Funcion ejercicio33
+	//Ejercicio N°33
+	//Definimos antidad, cantb, pasaje, recorrido, total Como entero
+	//Pedimos al usuario que ingrese la cantidad de viajes
+	//Leer cantidad
+	//Pedimos al usuario que ingrese cuanto va a ser el recorrido
+	//Leer recorrido
+	//Pedimos al usuario que ingrese el costo del pasaje
+	//Leer pasaje
+	//Usamos el Si-Entonces
+	//Mostramos los resultados
+	Definir cantidad, cantb, pasaje, recorrido, total Como Entero
+	Definir prom como real
+	Escribir "Ingrese la cantidad de viajes"
+	leer cantidad
+	Escribir "De cuanto va a ser el recorrido ?"
+	leer recorrido
+	Escribir "Ingrese el costo del pasaje"
+	leer pasaje
+	Si recorrido <= 100 Entonces
+		Escribir "No tiene incremento"
+		total = pasaje
+	Fin Si
+	si recorrido > 100 Entonces
+		Escribir "Tiene un incremento del 20%"
+		calculo = pasaje * 20 / 100
+		total = pasaje + calculo
+	FinSi
+	Escribir "El precio final es de:" , total "$"
+FinFuncion
+
+Funcion ejercicio34
+	//Ejercicio N°34
+	//Definimos a, b como entero
+	//Definimos x, suma1, prom como real
+	//x = 1
+	//a = 0
+	//b = 0
+	//Usamos el Mientras 
+	//Mostramos los resultados
+	Definir a, b Como Entero
+	Definir x,suma1, prom Como Real
+	x = 1
+	a = 0
+	b = 0
+	Mientras x <> 0 Hacer
+		Escribir "Ingrese un numero"
+		leer x
+		si x <> 0 Entonces
+			a = a + 1
+			si x > 0 Entonces
+				b = b + 1
+				suma1 = suma1 + x
+				prom = suma1 / a
+			FinSi
+		FinSi
+	Fin Mientras
+	Escribir "El total de los numero es:", a
+	Escribir "El promedio de los numeros es de:", prom
+FinFuncion
+
+Funcion ejercicio35
+	//Ejercicio N°35
+	//Definimos num, x como entero
+	//Pedimos al usuario que ingrese la cantidad de numeros que desea ingresar
+	//Leer x
+	//Usamos el Mientras 
+	//Usamos el Si-Entonces
+	//Mostramos los resultados
+	Definir num, x Como Entero
+	Escribir "Ingrese la cantidad de numeros que desea ingresar"
+	leer x
+	Mientras x >= 0 Hacer
+		Escribir "Imgrese un numero"
+		leer num 
+		x = x - 1
+	Fin Mientras
+	total = num + num
+	Si num mod 3 = 0 Entonces
+		Escribir "La cantidad de numeros multiplos de 3 son:", num
+	Fin Si
+	Escribir "La suma de los numeros ingresados es de:" , total
+FinFuncion
+Algoritmo Ejercicios_Pseint
+	//ejercicio1
+	//ejercicio2
+	//ejercicio3
+	//ejercicio4
+	//ejercicio5
+	//ejercicio6
+	//ejercicio7
+	//ejercicio8
+	//ejercicio9
+	//ejercicio10
+	//ejercicio11
+	//ejercicio12
+	//ejercicio13
+	//ejercicio14
+	//ejercicio15
+	//ejercicio16
+	//ejercicio17
+	//ejercicio18
+	//ejercicio19
+	//ejercicio20
+	//ejercicio21
+	//ejercicio22
+	//ejercicio23
+	//ejercicio24
+	//ejercicio25
+	//ejercicio26
+	//ejercicio27
+	//ejercicio28
+	//ejercicio29
+	//ejercicio30
+	//ejercicio31
+	//ejercicio32
+	//ejercicio33
+	//ejercicio34
+  //ejercicio35
+FinAlgoritmo
