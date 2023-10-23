@@ -1004,39 +1004,154 @@ Funcion ejercicio35
 	Escribir "La suma de los numeros ingresados es de:" , total
 FinFuncion
 Algoritmo Ejercicios_Pseint
-	//ejercicio1
-	//ejercicio2
-	//ejercicio3
-	//ejercicio4
-	//ejercicio5
-	//ejercicio6
-	//ejercicio7
-	//ejercicio8
-	//ejercicio9
-	//ejercicio10
-	//ejercicio11
-	//ejercicio12
-	//ejercicio13
-	//ejercicio14
-	//ejercicio15
-	//ejercicio16
-	//ejercicio17
-	//ejercicio18
-	//ejercicio19
-	//ejercicio20
-	//ejercicio21
-	//ejercicio22
-	//ejercicio23
-	//ejercicio24
-	//ejercicio25
-	//ejercicio26
-	//ejercicio27
-	//ejercicio28
-	//ejercicio29
-	//ejercicio30
-	//ejercicio31
-	//ejercicio32
-	//ejercicio33
-	//ejercicio34
-  //ejercicio35
+	definir ejerc como entero
+	Escribir "Ingrese el numero del ejercicio que quieres ejecutar(1-35)"
+	leer ejerc 
+	Esperar Tecla
+	Esperar 1 Segundos
+	Segun ejerc Hacer
+		1:
+			Limpiar Pantalla
+			Escribir "Leer un Caracter"
+			ejercicio1
+		2:
+			Limpiar Pantalla
+			Escribir "Deducir si es un numero o vocal"
+			ejercicio2
+		3:
+			Limpiar Pantalla
+			Escribir "Valor de vocal"
+			ejercicio3
+		4:
+			Limpiar Pantalla
+			Escribir "Verificar si son numeros iguales"
+			ejercicio4
+		5:
+			Limpiar Pantalla
+			Escribir "Determinar si son numeros iguales"
+			ejercicio5
+		6:
+			Limpiar Pantalla
+			Escribir "Determinar numero mayor"
+			ejercicio6
+		7:
+			Limpiar Pantalla
+			Escribir "Determinar si un numero es neutro, positivo o negativo"
+			ejercicio7
+		8:
+			Limpiar Pantalla
+			Escribir "Cuanto se debe pagar"
+			ejercicio8
+		9:
+			Limpiar Pantalla
+			Escribir "Promocion"
+			ejercicio9
+		10:
+			Limpiar Pantalla
+			Escribir "Tarifas de banquetes"
+			ejercicio10
+		11:
+			Limpiar Pantalla
+			Escribir "Vinicultores"
+			ejercicio11
+		12:
+			Limpiar Pantalla
+			Escribir "Viaje de estudios"
+			ejercicio12
+		13:
+			Limpiar Pantalla
+			Escribir "Viajes con 3 tipos de autobuses"
+			ejercicio13
+		14:
+			Limpiar Pantalla
+			Escribir "Determinar cuanto se debe pagar por colas"
+			ejercicio14
+		15:
+			Limpiar Pantalla
+			Escribir "Supermercado"
+			ejercicio15
+		16:
+			Limpiar Pantalla
+			Escribir "Consultorio Dr Paez"
+			ejercicio16
+		17:
+			Limpiar Pantalla
+			Escribir "Fabrica el Baraton"
+			ejercicio17
+		18:
+			Limpiar Pantalla
+			Escribir "Banco XYZ"
+			ejercicio18
+		19:
+			Limpiar Pantalla
+			Escribir "Paqueteria internacional"
+			ejercicio19
+		20:
+			Limpiar Pantalla
+			Escribir "Peso de alumnos"
+			ejercicio20
+		21:
+			Limpiar Pantalla
+			Escribir "Numero mitad de otro"
+			ejercicio21
+		22:
+			Limpiar Pantalla
+			Escribir "Escribir 3 numeros"
+			ejercicio22
+		23:
+			Limpiar Pantalla
+			Escribir "Dias de la semana"
+			ejercicio23
+		24:
+			Limpiar Pantalla
+			Escribir "Meses del año"
+			ejercicio24
+		25:
+			Limpiar Pantalla
+			Escribir "Estatura promedio"
+			ejercicio25
+		26:
+			Limpiar Pantalla
+			Escribir "Numeros pares comprendidos de 0 a 100"
+			ejercicio26
+		27:
+			Limpiar Pantalla
+			Escribir "Suma de 10 numeros"
+			ejercicio27
+		28:
+			Limpiar Pantalla
+			Escribir "Edad promedio"
+			ejercicio28
+		29:
+			Limpiar Pantalla
+			Escribir "Registro de horas"
+			ejercicio29
+		30:
+			Limpiar Pantalla
+			Escribir "Empleado Tienda Somos Mas"
+			ejercicio30
+		31:
+			Limpiar Pantalla
+			Escribir "Calificaciones"
+			ejercicio31
+		32:
+			Limpiar Pantalla
+			Escribir "Sueldos y categorias"
+			ejercicio32
+		33:
+			Limpiar Pantalla
+			Escribir "Cantidad de viajes y pasaje"
+			ejercicio33
+		34:
+			Limpiar Pantalla
+			Escribir "Serie de numeros distintos"
+			ejercicio34
+		35:
+			Limpiar Pantalla
+			Escribir "Numeros positivos"
+			ejercicio35
+		De Otro Modo:
+			Limpiar Pantalla
+			Escribir "ERROR"
+	Fin Segun
 FinAlgoritmo
